@@ -3,9 +3,21 @@ subprojects {
     buildscript {
         repositories {
             jcenter()
+            maven {
+                url 'https://maven.google.com'
+            }
         }
     }
     repositories {
+        jcenter()
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
         jcenter()
     }
 }

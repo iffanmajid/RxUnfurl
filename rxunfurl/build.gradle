@@ -8,12 +8,8 @@ apply plugin: 'maven'
 group = 'com.schinizer'
 version = rxunfurlVersion
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
-
-sourceSets.test {
-    output.resourcesDir = output.classesDir
-}
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
 
 dependencies {
     compile "io.reactivex.rxjava2:rxjava:${rxjavaVersion}"
